@@ -1,0 +1,39 @@
+<br/><br/><br/><br/>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <form name="login" novalidate="novalidate"><br/>
+        <div class="form-group">
+          <input class="form-control" type="text" name="username" placeholder="Username">
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="password" name="password" placeholder="Password">
+        </div>
+        <input class="btn btn-default" type="submit" value="Log In">
+      </form>
+      <a ng-click="reset()">Forgot your password?</a>
+    </div>
+    <div class="col-sm-6">
+      <form name="create" novalidate="novalidate"><br/>
+        <div class="form-group">
+          <input class="form-control" type="text" name="firstName" placeholder="First" ng-model="newUserObj.firstName">
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="text" name="lastName" placeholder="Last" ng-model="newUserObj.lastName">
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="text" name="email" placeholder="Email" ng-model="newUserObj.email">
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="text" name="username" placeholder="Username" ng-model="newUserObj.username">
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="password" name="password" placeholder="Password" ng-model="newUserObj.password">
+        </div>
+        <div class="form-group">
+          <input ng-click="newUser()" type="submit" value="Sign Up">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
